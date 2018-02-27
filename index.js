@@ -26,17 +26,11 @@ function transitionPage(el, groupOut, groupIn) {
 /*************************************************************************/
 
 function delayedFadeOut(div, range, min = 0) {
-  setTimeout(() => {
-      fadeOut(div)
-    }, Math.random() * range + min)
-  // setTimeout(fadeOut, Math.random() * range + min, div);
+  setTimeout(fadeOut, Math.random() * range + min, div);
 }
 
 function delayedFadeIn(div, range, min = 0) {
-  // setTimeout(fadeIn, Math.random() * range + min, div);
-  setTimeout(() => {
-    fadeIn(div)
-  }, Math.random() * range + min)
+  setTimeout(fadeIn, Math.random() * range + min, div);
 }
 
 function fadeAllOut(el, group) {
